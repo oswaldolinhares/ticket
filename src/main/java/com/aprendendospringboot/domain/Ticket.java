@@ -59,6 +59,13 @@ public class Ticket {
 	public void setAccount(Account account) {
 		this.account = account;
 	}
+
+	@Override
+	public String toString() {
+		return "Ticket [code=" + code + ", creation=" + creation
+				+ ", priority=" + priority + ", description=" + description
+				+ ", account=" + account + "]";
+	}
 	
 
 	

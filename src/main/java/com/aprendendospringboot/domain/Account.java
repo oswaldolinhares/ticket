@@ -1,10 +1,26 @@
 package com.aprendendospringboot.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Account {
+	@Id
+	private String login;
+	private String email;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public String getLogin() {
+		return login;
 	}
+	public void setLogin(String login) {
+		this.login = login;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
 
 }
